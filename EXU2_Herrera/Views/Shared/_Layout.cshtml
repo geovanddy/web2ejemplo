@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Examen U22</title>
+    <!--Boostrap-->
+
+    <link href="~/Assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!--jquery-->
+
+    <script src="~/Assets/js/jquery-3.6.0.min.js"></script>
+    @*Datatables*@
+
+    <link href="~/Assets/DataTables/datatables.min.css" rel="stylesheet" />
+    <link href="~/Assets/DataTables/css/dataTables.semanticui.min.css" rel="stylesheet" />
+    <link href="~/Assets/DataTables/css/dataTables.foundation.min.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu Pincipal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="~/Empleado/index">Empleado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="~/Compras/Index">Compras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="~/Pedidos/Index">Pedidos</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav me-0 mb-0 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="~/Uploads/usuario4.png" width="40" height="40" />
+                                <b>Bienvenido: </b> Herrera <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Perfil de Usuario</a></li>
+                                <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Boostrap-->
+    <div class="container">
+        <h1 class="text-center">Sistema - MVC</h1>
+        @RenderBody()
+    </div>
+    @*Boostrap*@
+    <script src="~/Assets/js/bootstrap.min.js"></script>
+
+
+    @*Datatables*@
+    <script src="~/Assets/DataTables/datatables.min.js"></script>
+
+
+</body>
+</html>
